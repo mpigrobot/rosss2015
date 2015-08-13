@@ -1,0 +1,11 @@
+<launch>
+
+  <include file="$(find robot_demos)/launch/gazebo_world.launch" />
+	
+  <include file="$(find robot_demos)/launch/pioneer_robot.launch" />
+
+  <include file="$(find robot_demos)/launch/gmapping.launch"/>
+
+  <!--include file="$(find robot_demos)/launch/move_base.launch"/-->
+
+</launch>

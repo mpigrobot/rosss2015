@@ -1,0 +1,80 @@
+ssh pioneer@cseeros1
+passwd: ros
+
+On Pioneer
+Navigation:roslaunch pioneer_nav amcl_navigation.launch
+On PC: 
+
+#Setting multiple ros machines:
+sudo gedit /etc/hosts
+Change it from:
+127.0.0.1    localhost <name of your pc>
+to:
+127.0.0.1    localhost
+<ip of your pc>    <name of your pc>
+<ip of robot pc>    <name of pioneer pc>
+On your PC append the following line:
+$gedit ~/.bashrc
+ export ROS_IP
+> echo export ROS_HOSTNAME=IP_OF_ROBOT >> ~/.bashrc
+> sudo sh -c 'echo export ROS_HOSTNAME=IP_OF_ROBOT >> /etc/ros/setup.sh
+> echo export ROS_MASTER_URI=http://IP_OF_ROBOT:11311 >> ~/.bashrc
+
+echo export ROS_HOSTNAME=IP_OF_WORKSTATION >> ~/.bashrc
+export ROS_IP=155.245.22.33
+export ROS_HOSTNAME=155.245.22.50
+export ROS_MASTER_URI=http://155.245.22.33:11311
+
+#!/bin/bash
+ 
+my_pid=$$
+echo "My process ID is $my_pid"
+
+#echo "Launching roscore..."
+#roscore &
+#pid=$!
+#sleep 1s
+
+echo "Launching Gazebo..."
+roslaunch pioneer_gazebo pioneer_world.launch &
+pid="$pid $!"
+
+sleep 10s
+
+echo "Launching publishers..."
+rosrun pioneer_ros pioneer_tf_broadcaster &
+pid="$pid $!"
+
+rosrun pioneer_ros pioneer_odom_publisher &
+pid="$pid $!"
+
+sleep 3s
+
+echo "Launching gmapping..."
+rosrun gmapping slam_gmapping scan:=/pioneer/laser/scan &
+pid="$pid $!"
+
+echo "Launching navigation stack..."
+roslaunch robot_demos move_base.launch &
+pid="$pid $!"
+
+sleep 3s
+
+echo "Launching Rviz..."
+roslaunch pioneer_description pioneer_rviz.launch &
+
+sleep 3s
+
+echo "Launching pioneer controller..."
+rosparam load "$(rospack find pioneer_ros)/pioneer_controller_params.yaml" pioneer_ros &
+
+sleep 1s
+
+rosrun pioneer_ros pioneer_pid_controller &
+pid="$pid $!"
+
+trap "echo Killing all processes.; kill -s TERM $pid; exit" SIGINT SIGTERM
+
+sleep 24h
+
+

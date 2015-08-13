@@ -1,0 +1,12 @@
+<launch>
+	<master auto="start"/>
+	
+	<!--include file="$(find robot_demos)/launch/gazebo_world.launch" / -->
+	
+	<include file="$(find robot_demos)/launch/pioneer_robot.launch" />
+	<!--- Run AMCL -->
+	<include file="$(find robot_demos)/launch/amcl.launch" />
+	
+	<include file="$(find robot_demos)/launch/move_base.launch" />
+	
+</launch>

@@ -1,0 +1,252 @@
+<?xml version="1.0"?>
+<sdf version='1.4'>
+  <model name='m_walls_gerard_bauzil'>
+      <link name='Walls_Gerard_Bauzil'>
+        <collision name='Walls_Gerard_Bauzil_Collision'>
+          <geometry>
+            <mesh>
+              <uri>model://gerard_bauzil_walls/meshes/gerard_bauzil_walls_v2.dae</uri>
+            </mesh>
+          </geometry>
+          <pose>0.000000 0.000000 0.0000 0.000000 0.000000 0.000000</pose>
+          <surface>
+            <bounce/>
+            <friction>
+              <ode/>
+            </friction>
+            <contact>
+              <ode/>
+            </contact>
+          </surface>
+        </collision>
+        <visual name='Walls_Gerard_Bauzil_Visual'>
+          <pose>0.000000 0.000000 0.0000 0.000000 0.000000 0.000000</pose>
+          <geometry>
+            <mesh>
+              <uri>model://gerard_bauzil_walls/meshes/gerard_bauzil_walls_v2.dae</uri>
+            </mesh>
+          </geometry>
+          <material>
+            <script>
+              <uri>file://media/materials/scripts/gazebo.material</uri>
+              <name>Gazebo/Grey</name>
+            </script>
+          </material>
+        </visual>
+        <velocity_decay>
+          <linear>0.000000</linear>
+          <angular>0.000000</angular>
+        </velocity_decay>
+        <pose>0.000 0.00 0.000000 0.000000 0.000000 0.00</pose>
+        <self_collide>0</self_collide>
+        <kinematic>0</kinematic>
+        <gravity>1</gravity>
+      </link>
+     <link name='Estrade_Gerard_Bauzil'>
+        <collision name='Estrade_Gerard_Bauzil_Collision'>
+          <geometry>
+            <mesh>
+              <uri>model://gerard_bauzil_walls/meshes/estrade_v2.dae</uri>
+            </mesh>
+          </geometry>
+          <pose>0.000000 0.000000 0.0000 0.000000 0.000000 0.000000</pose>
+          <surface>
+            <bounce/>
+            <friction>
+              <ode/>
+            </friction>
+            <contact>
+              <ode/>
+            </contact>
+          </surface>
+        </collision>
+        <visual name='Estrade_Gerard_Bauzil_Visual'>
+          <pose>0.000000 0.000000 0.0000 0.000000 0.000000 0.000000</pose>
+          <geometry>
+            <mesh>
+              <uri>model://gerard_bauzil_walls/meshes/estrade_v2.dae</uri>
+            </mesh>
+          </geometry>
+          <material>
+            <script>
+              <uri>file://media/materials/scripts/gazebo.material</uri>
+              <name>Gazebo/DarkGrey</name>
+            </script>
+          </material>
+        </visual>
+        <velocity_decay>
+          <linear>0.000000</linear>
+          <angular>0.000000</angular>
+        </velocity_decay>
+        <pose>0.000 0.00 0.000000 0.000000 0.000000 0.00</pose>
+        <self_collide>0</self_collide>
+        <kinematic>0</kinematic>
+        <gravity>1</gravity>
+      </link>
+     <link name='Barrier_Gerard_Bauzil'>
+        <collision name='Barrier_Gerard_Bauzil_Collision'>
+          <geometry>
+            <mesh>
+              <uri>model://gerard_bauzil_walls/meshes/barrier_v2.dae</uri>
+            </mesh>
+          </geometry>
+          <pose>0.000000 0.000000 0.0000 0.000000 0.000000 0.000000</pose>
+          <surface>
+            <bounce/>
+            <friction>
+              <ode/>
+            </friction>
+            <contact>
+              <ode/>
+            </contact>
+          </surface>
+        </collision>
+        <visual name='Barrier_Gerard_Bauzil_Visual'>
+          <pose>0.000000 0.000000 0.0000 0.000000 0.000000 0.000000</pose>
+          <geometry>
+            <mesh>
+              <uri>model://gerard_bauzil_walls/meshes/barrier_v2.dae</uri>
+            </mesh>
+          </geometry>
+          <material>
+            <script>
+              <uri>file://media/materials/scripts/gazebo.material</uri>
+              <name>Gazebo/White</name>
+            </script>
+          </material>
+        </visual>
+        <velocity_decay>
+          <linear>0.000000</linear>
+          <angular>0.000000</angular>
+        </velocity_decay>
+        <pose>0.000 0.00 0.000000 0.000000 0.000000 0.00</pose>
+        <self_collide>0</self_collide>
+        <kinematic>0</kinematic>
+        <gravity>1</gravity>
+      </link>
+     <link name='Columns_Gerard_Bauzil'>
+        <collision name='Columns_Gerard_Bauzil_Collision'>
+          <geometry>
+            <mesh>
+              <uri>model://gerard_bauzil_walls/meshes/blue-column_v2.dae</uri>
+            </mesh>
+          </geometry>
+          <pose>0.3 3.3 0.0 0.0 0.0 0.0</pose>
+          <surface>
+            <bounce/>
+            <friction>
+              <ode/>
+            </friction>
+            <contact>
+              <ode/>
+            </contact>
+          </surface>
+        </collision>
+        <visual name='Columns_Gerard_Bauzil_Visual'>
+          <pose>0.3 3.3 0.0 0.0 0.0 0.0</pose>        
+          <geometry>
+            <mesh>
+              <uri>model://gerard_bauzil_walls/meshes/blue-column_v2.dae</uri>
+            </mesh>
+          </geometry>
+          <material>
+            <script>
+              <uri>file://media/materials/scripts/gazebo.material</uri>
+              <name>Gazebo/Blue</name>
+            </script>
+          </material>
+        </visual>
+        <velocity_decay>
+          <linear>0.000000</linear>
+          <angular>0.000000</angular>
+        </velocity_decay>
+        <pose>0.0 0.0 0.0 0.0 0.0 0.0</pose>
+        <self_collide>0</self_collide>
+        <kinematic>0</kinematic>
+        <gravity>1</gravity>
+      </link>
+      <link name='Columns_Gerard_Bauzil_2'>
+        <collision name='Columns_Gerard_Bauzil_Collision_2'>
+          <geometry>
+            <mesh>
+              <uri>model://gerard_bauzil_walls/meshes/blue-column_v2.dae</uri>
+            </mesh>
+          </geometry>
+          <pose>-3.795 3.3 0.0 0.0 0.0 0.0</pose>
+          <surface>
+            <bounce/>
+            <friction>
+              <ode/>
+            </friction>
+            <contact>
+              <ode/>
+            </contact>
+          </surface>
+        </collision>
+        <visual name='Columns_Gerard_Bauzil_Visual_2'>
+          <pose>-3.795 3.3 0.0 0.0 0.0 0.0</pose>        
+          <geometry>
+            <mesh>
+              <uri>model://gerard_bauzil_walls/meshes/blue-column_v2.dae</uri>
+            </mesh>
+          </geometry>
+          <material>
+            <script>
+              <uri>file://media/materials/scripts/gazebo.material</uri>
+              <name>Gazebo/Blue</name>
+            </script>
+          </material>
+        </visual>
+        <velocity_decay>
+          <linear>0.0</linear>
+          <angular>0.0</angular>
+        </velocity_decay>
+        <pose>0.0 0.0 0.0 0.0 0.0 0.0</pose>
+        <self_collide>0</self_collide>
+        <kinematic>0</kinematic>
+        <gravity>1</gravity>
+      </link>
+      <link name='Columns_Gerard_Bauzil_3'>
+        <collision name='Columns_Gerard_Bauzil_Collision_3'>
+          <geometry>
+            <mesh>
+              <uri>model://gerard_bauzil_walls/meshes/blue-column_v2.dae</uri>
+            </mesh>
+          </geometry>
+          <pose>4.96 3.3 0.0 0.0 0.0 0.0</pose>
+          <surface>
+            <bounce/>
+            <friction>
+              <ode/>
+            </friction>
+            <contact>
+              <ode/>
+            </contact>
+          </surface>
+        </collision>
+        <visual name='Columns_Gerard_Bauzil_Visual_3'>
+          <pose>4.96 3.3 0.0 0.0 0.0 0.0</pose>        
+          <geometry>
+            <mesh>
+              <uri>model://gerard_bauzil_walls/meshes/blue-column_v2.dae</uri>
+            </mesh>
+          </geometry>
+          <material>
+            <script>
+              <uri>file://media/materials/scripts/gazebo.material</uri>
+              <name>Gazebo/Blue</name>
+            </script>
+          </material>
+        </visual>
+        <velocity_decay>
+          <linear>0.0</linear>
+          <angular>0.0</angular>
+        </velocity_decay>
+        <pose>0.0 0.0 0.0 0.0 0.0 0.0</pose>
+        <self_collide>0</self_collide>
+        <kinematic>0</kinematic>
+        <gravity>1</gravity>
+      </link>
+      <static>1</static>
+    </model>
+</sdf>

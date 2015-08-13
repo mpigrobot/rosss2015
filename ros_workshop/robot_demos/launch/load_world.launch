@@ -1,0 +1,13 @@
+<launch>
+  <arg name="world" default="default"/>
+
+  <!-- push robot_description to factory and spawn robot in gazebo -->
+  <node name="kulbu_spawn" pkg="gazebo_ros" type="spawn_model" output="screen"
+    args="-urdf -param $(arg ns)/robot_description -model kulbu" />
+
+  <include file="$(find gazebo_ros)/launch/empty_world.launch">
+    <arg name="world_name" value="$(find robot_demos)/world/$(arg world).world"/>
+    <arg name="gui" value="true"/>
+  </include>
+
+</launch>

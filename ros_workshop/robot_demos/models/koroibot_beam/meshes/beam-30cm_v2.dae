@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<COLLADA xmlns="http://www.collada.org/2005/11/COLLADASchema" version="1.4.1">
+    <asset>
+        <contributor>
+            <author>O. Stasse</author>
+            <authoring_tool>Emacs</authoring_tool>
+        </contributor>
+        <up_axis>Z_UP</up_axis>
+        <created>Sat Dec 27 7:53:00 2014</created>
+     </asset>
+    <library_images/>
+    <library_effects>
+      <effect id="Material-effect">
+        <profile_COMMON>
+          <technique sid="common">
+            <lambert>
+              <emission>
+                <color>0 0 0 1</color>
+              </emission>
+              <ambient>
+                <color>0 0 0 1</color>
+              </ambient>
+              <diffuse>
+                <color>0.800000011921 0.800000011921 0.0 1</color>
+              </diffuse>
+              <reflective>
+                <color>0 0 0 1</color>
+              </reflective>
+              <reflectivity>
+                <float>0</float>
+              </reflectivity>
+              <transparent>
+                <color>0 0 0 1</color>
+              </transparent>
+              <transparency>
+                <float>1</float>
+              </transparency>
+              <index_of_refraction>
+                <float>1</float>
+              </index_of_refraction>
+            </lambert>
+          </technique>
+        </profile_COMMON>
+      </effect>
+    </library_effects>
+    <library_materials>
+      <material id="Material">
+        <instance_effect url="#Material-effect"/>
+      </material>
+    </library_materials>
+    <library_geometries>
+       <geometry id="Beam-mesh">
+        <mesh>
+        <source id="Beam-mesh-positions">
+          <float_array id="Beam-mesh-positions-array" count="48">
+          0.0   0.0  0 
+          0.0   0.0  0.15 
+          0.3   0.0  0.15 
+          0.3   0.0  0.295  
+          0.585 0.0  0.295 
+          0.585 0.0  0.445 
+          1.18  0.0  0.445 
+          1.18  0.0  0.0
+          0.0   0.795  0 
+          0.0   0.795  0.15 
+          0.3   0.795  0.15 
+          0.3   0.795  0.295  
+          0.585 0.795  0.295 
+          0.585 0.795  0.445 
+          1.18  0.795  0.445 
+          1.18  0.795  0.0 
+          </float_array>
+           <technique_common>
+             <accessor source="#Beam-mesh-positions-array" count="16" stride="3">
+               <param name="X" type="float"/>
+               <param name="Y" type="float"/>
+               <param name="Z" type="float"/>
+             </accessor>
+           </technique_common>
+         </source>
+         <source id="Beam-mesh-normals">
+           <float_array id="Beam-mesh-normals-array" count="48">
+           0.577349185943 0.577349185943 -0.577349185943 
+           0.577349185943 -0.577349185943 -0.577349185943 
+           -0.577349185943 -0.577349185943 -0.577349185943 
+           -0.577349185943 0.577349185943 -0.577349185943 
+           0.577349185943 0.577349185943 0.577349185943 
+           0.577349185943 -0.577349185943 0.577349185943 
+           -0.577349185943 -0.577349185943 0.577349185943 
+           -0.577349185943 0.577349185943 0.577349185943
+           0.577349185943 0.577349185943 -0.577349185943 
+           0.577349185943 -0.577349185943 -0.577349185943 
+           -0.577349185943 -0.577349185943 -0.577349185943 
+           -0.577349185943 0.577349185943 -0.577349185943 
+           0.577349185943 0.577349185943 0.577349185943 
+           0.577349185943 -0.577349185943 0.577349185943 
+           -0.577349185943 -0.577349185943 0.577349185943 
+           -0.577349185943 0.577349185943 0.577349185943
+           </float_array>
+           <technique_common>
+             <accessor source="#Beam-mesh-normals-array" count="8" stride="3">
+               <param name="X" type="float"/>
+               <param name="Y" type="float"/>
+               <param name="Z" type="float"/>
+             </accessor>
+           </technique_common>
+         </source>
+         <vertices id="Beam-mesh-vertices">
+           <input semantic="POSITION" source="#Beam-mesh-positions"/>
+         </vertices>
+         <polylist material="Material" count="10">
+           <input semantic="VERTEX" source="#Beam-mesh-vertices" offset="0"/>
+           <input semantic="NORMAL" source="#Beam-mesh-normals" offset="1"/>
+           <vcount>8 8 4 4 4 4 4 4 4 4</vcount>
+           <p>
+             0 8 1 9 2  10 3 11 4  12 5  13 6  14 7 15
+             0 1 9 8 
+             1 2 10 9
+             2 3 11 10
+             3 4 12 11
+             4 5 13 12
+             5 6 14 13
+             6 7 15 14
+             0 7 15 8
+           </p>
+           
+         </polylist>
+       </mesh>
+       </geometry>
+    </library_geometries>
+    <library_visual_scenes>
+        <visual_scene id="VisualSceneNode" name="VisualScene">
+            <node id="stair1" name="node">
+              <translate sid="location">0.0 0.0 0.0</translate>
+              <rotate sid="rotationZ">0 0 1 0.0</rotate>
+              <rotate sid="rotationY">0 1 0 0.0</rotate>
+              <rotate sid="rotationX">1 0 0 0.0</rotate>
+              <scale sid="scale">1 1 1</scale>
+                <instance_geometry url="#Beam-mesh">
+                    <bind_material>
+                        <technique_common>
+                          <instance_material symbol="Material" target="#Material"/>
+                        </technique_common>    
+                    </bind_material>
+                </instance_geometry>
+            </node>
+        </visual_scene>
+    </library_visual_scenes>
+    <scene>
+        <instance_visual_scene url="#VisualSceneNode"/>
+    </scene>
+</COLLADA>

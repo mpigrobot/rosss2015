@@ -1,0 +1,6 @@
+<launch>
+  <node pkg="gmapping" type="slam_gmapping" name="slam_gmapping" output="screen" clear_params="true">
+    <param name="odom_frame" value="odom"/>
+    <remap from="scan" to="/pioneer/laser/scan"/>
+  </node>
+</launch>

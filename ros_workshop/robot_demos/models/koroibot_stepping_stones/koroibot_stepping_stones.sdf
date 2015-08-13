@@ -1,0 +1,334 @@
+<?xml version="1.0"?>
+<sdf version='1.4'>
+  <model name='m_stepping_stones'>
+     <link name='Stepping_Stones_1'>
+        <collision name='Stepping_Stones_Collision_1'>
+          <geometry>
+            <mesh>
+              <uri>model://koroibot_stepping_stones/meshes/steppingstone5cm_v2.dae</uri>
+            </mesh>
+          </geometry>
+          <pose>0.33 0.175 0.0 0.0 0.0 0.0</pose>
+          <surface>
+            <bounce/>
+            <friction>
+              <ode/>
+            </friction>
+            <contact>
+              <ode/>
+            </contact>
+          </surface>
+        </collision>
+        <visual name='Stepping_Stones_Visual_1'>
+          <pose>0.33 0.175 0.0 0.0 0.0 0.0</pose>
+          <geometry>
+            <mesh>
+              <uri>model://koroibot_stepping_stones/meshes/steppingstone5cm_v2.dae</uri>
+            </mesh>
+          </geometry>
+          <material>
+            <script>
+              <uri>file://media/materials/scripts/gazebo.material</uri>
+              <name>Gazebo/Red</name>
+            </script>
+          </material>
+        </visual>
+        <velocity_decay>
+          <linear>0.000000</linear>
+          <angular>0.000000</angular>
+        </velocity_decay>
+        <pose>1.0 1.0 0.0 0.0 0.0 3.14</pose>
+        <self_collide>0</self_collide>
+        <kinematic>0</kinematic>
+        <gravity>1</gravity>
+      </link>
+     <link name='Stepping_Stones_2'>
+        <collision name='Stepping_Stones_Collision_2'>
+          <geometry>
+            <mesh>
+              <uri>model://koroibot_stepping_stones/meshes/steppingstone5cm_v2.dae</uri>
+            </mesh>
+          </geometry>
+          <pose>0.53 -0.175 0.05 0.0 0.0 0.0</pose>
+          <surface>
+            <bounce/>
+            <friction>
+              <ode/>
+            </friction>
+            <contact>
+              <ode/>
+            </contact>
+          </surface>
+        </collision>
+        <visual name='Stepping_Stones_Visual_2'>
+          <pose>0.53 -0.175 0.05 0.0 0.0 0.0</pose>
+          <geometry>
+            <mesh>
+              <uri>model://koroibot_stepping_stones/meshes/steppingstone5cm_v2.dae</uri>
+            </mesh>
+          </geometry>
+          <material>
+            <script>
+              <uri>file://media/materials/scripts/gazebo.material</uri>
+              <name>Gazebo/Red</name>
+            </script>
+          </material>
+        </visual>
+        <velocity_decay>
+          <linear>0.000000</linear>
+          <angular>0.000000</angular>
+        </velocity_decay>
+        <pose>1.0 1.0 0.0 0.0 0.0 3.14</pose>
+        <self_collide>0</self_collide>
+        <kinematic>0</kinematic>
+        <gravity>1</gravity>
+      </link>
+      <link name='Stepping_Stones_3'>
+        <collision name='Stepping_Stones_Collision_3'>
+          <geometry>
+            <mesh>
+              <uri>model://koroibot_stepping_stones/meshes/steppingstone5cm_v2.dae</uri>
+            </mesh>
+          </geometry>
+          <pose>0.75 0.175 0.1 0.0 0.0 0.0</pose>
+          <surface>
+            <bounce/>
+            <friction>
+              <ode/>
+            </friction>
+            <contact>
+              <ode/>
+            </contact>
+          </surface>
+        </collision>
+        <visual name='Stepping_Stones_Visual_3'>
+          <pose>0.75 0.175 0.1 0.0 0.0 0.0</pose>
+          <geometry>
+            <mesh>
+              <uri>model://koroibot_stepping_stones/meshes/steppingstone5cm_v2.dae</uri>
+            </mesh>
+          </geometry>
+          <material>
+            <script>
+              <uri>file://media/materials/scripts/gazebo.material</uri>
+              <name>Gazebo/Red</name>
+            </script>
+          </material>
+        </visual>
+        <velocity_decay>
+          <linear>0.000000</linear>
+          <angular>0.000000</angular>
+        </velocity_decay>
+        <pose>1.0 1.0 0.0 0.0 0.0 3.14</pose>
+        <self_collide>0</self_collide>
+        <kinematic>0</kinematic>
+        <gravity>1</gravity>
+      </link>
+      <link name='Stepping_Stones_4'>
+        <collision name='Stepping_Stones_Collision_4'>
+          <geometry>
+            <mesh>
+              <uri>model://koroibot_stepping_stones/meshes/steppingstone5cm_v2.dae</uri>
+            </mesh>
+          </geometry>
+          <pose>0.95 -0.175 0.15 0.0 0.0 0.0</pose>
+          <surface>
+            <bounce/>
+            <friction>
+              <ode/>
+            </friction>
+            <contact>
+              <ode/>
+            </contact>
+          </surface>
+        </collision>
+        <visual name='Stepping_Stones_Visual_4'>
+          <pose>0.95 -0.175 0.15 0.0 0.0 0.0</pose>
+          <geometry>
+            <mesh>
+              <uri>model://koroibot_stepping_stones/meshes/steppingstone5cm_v2.dae</uri>
+            </mesh>
+          </geometry>
+          <material>
+            <script>
+              <uri>file://media/materials/scripts/gazebo.material</uri>
+              <name>Gazebo/Red</name>
+            </script>
+          </material>
+        </visual>
+        <velocity_decay>
+          <linear>0.000000</linear>
+          <angular>0.000000</angular>
+        </velocity_decay>
+        <pose>1.0 1.0 0.0 0.0 0.0 3.14</pose>
+        <self_collide>0</self_collide>
+        <kinematic>0</kinematic>
+        <gravity>1</gravity>
+      </link>
+      <link name='Stepping_Stones_5'>
+        <collision name='Stepping_Stones_Collision_5'>
+          <geometry>
+            <mesh>
+              <uri>model://koroibot_stepping_stones/meshes/steppingstone5cm_v2.dae</uri>
+            </mesh>
+          </geometry>
+          <pose>1.15 0.175 0.15 0.0 0.0 0.0</pose>
+          <surface>
+            <bounce/>
+            <friction>
+              <ode/>
+            </friction>
+            <contact>
+              <ode/>
+            </contact>
+          </surface>
+        </collision>
+        <visual name='Stepping_Stones_Visual_5'>
+          <pose>1.15 0.175 0.15 0.0 0.0 0.0</pose>
+          <geometry>
+            <mesh>
+              <uri>model://koroibot_stepping_stones/meshes/steppingstone5cm_v2.dae</uri>
+            </mesh>
+          </geometry>
+          <material>
+            <script>
+              <uri>file://media/materials/scripts/gazebo.material</uri>
+              <name>Gazebo/Red</name>
+            </script>
+          </material>
+        </visual>
+        <velocity_decay>
+          <linear>0.000000</linear>
+          <angular>0.000000</angular>
+        </velocity_decay>
+        <pose>1.0 1.0 0.0 0.0 0.0 3.14</pose>
+        <self_collide>0</self_collide>
+        <kinematic>0</kinematic>
+        <gravity>1</gravity>
+      </link>
+      <link name='Stepping_Stones_6'>
+        <collision name='Stepping_Stones_Collision_6'>
+          <geometry>
+            <mesh>
+              <uri>model://koroibot_stepping_stones/meshes/steppingstone5cm_v2.dae</uri>
+            </mesh>
+          </geometry>
+          <pose>1.35 -0.175 0.1 0.0 0.0 0.0</pose>
+          <surface>
+            <bounce/>
+            <friction>
+              <ode/>
+            </friction>
+            <contact>
+              <ode/>
+            </contact>
+          </surface>
+        </collision>
+        <visual name='Stepping_Stones_Visual_6'>
+          <pose>1.35 -0.175 0.1 0.0 0.0 0.0</pose>
+          <geometry>
+            <mesh>
+              <uri>model://koroibot_stepping_stones/meshes/steppingstone5cm_v2.dae</uri>
+            </mesh>
+          </geometry>
+          <material>
+            <script>
+              <uri>file://media/materials/scripts/gazebo.material</uri>
+              <name>Gazebo/Red</name>
+            </script>
+          </material>
+        </visual>
+        <velocity_decay>
+          <linear>0.000000</linear>
+          <angular>0.000000</angular>
+        </velocity_decay>
+        <pose>1.0 1.0 0.0 0.0 0.0 3.14</pose>
+        <self_collide>0</self_collide>
+        <kinematic>0</kinematic>
+        <gravity>1</gravity>
+      </link>
+      <link name='Stepping_Stones_7'>
+        <collision name='Stepping_Stones_Collision_7'>
+          <geometry>
+            <mesh>
+              <uri>model://koroibot_stepping_stones/meshes/steppingstone5cm_v2.dae</uri>
+            </mesh>
+          </geometry>
+          <pose>1.55 0.175 0.05 0.0 0.0 0.0</pose>
+          <surface>
+            <bounce/>
+            <friction>
+              <ode/>
+            </friction>
+            <contact>
+              <ode/>
+            </contact>
+          </surface>
+        </collision>
+        <visual name='Stepping_Stones_Visual_7'>
+          <pose>1.55 0.175 0.05 0.0 0.0 0.0</pose>
+          <geometry>
+            <mesh>
+              <uri>model://koroibot_stepping_stones/meshes/steppingstone5cm_v2.dae</uri>
+            </mesh>
+          </geometry>
+          <material>
+            <script>
+              <uri>file://media/materials/scripts/gazebo.material</uri>
+              <name>Gazebo/Red</name>
+            </script>
+          </material>
+        </visual>
+        <velocity_decay>
+          <linear>0.000000</linear>
+          <angular>0.000000</angular>
+        </velocity_decay>
+        <pose>1.0 1.0 0.0 0.0 0.0 3.14</pose>
+        <self_collide>0</self_collide>
+        <kinematic>0</kinematic>
+        <gravity>1</gravity>
+      </link>
+      <link name='Stepping_Stones_8'>
+        <collision name='Stepping_Stones_Collision_8'>
+          <geometry>
+            <mesh>
+              <uri>model://koroibot_stepping_stones/meshes/steppingstoneplatform_v2.dae</uri>
+            </mesh>
+          </geometry>
+          <pose>1.75 0.0 0.0 0.0 0.0 0.0</pose>
+          <surface>
+            <bounce/>
+            <friction>
+              <ode/>
+            </friction>
+            <contact>
+              <ode/>
+            </contact>
+          </surface>
+        </collision>
+        <visual name='Stepping_Stones_Visual_8'>
+          <pose>1.75 0.0 0.0 0.0 0.0 0.0</pose>
+          <geometry>
+            <mesh>
+              <uri>model://koroibot_stepping_stones/meshes/steppingstoneplatform_v2.dae</uri>
+            </mesh>
+          </geometry>
+          <material>
+            <script>
+              <uri>file://media/materials/scripts/gazebo.material</uri>
+              <name>Gazebo/Red</name>
+            </script>
+          </material>
+        </visual>
+        <velocity_decay>
+          <linear>0.000000</linear>
+          <angular>0.000000</angular>
+        </velocity_decay>
+        <pose>1.0 1.0 0.0 0.0 0.0 3.14</pose>
+        <self_collide>0</self_collide>
+        <kinematic>0</kinematic>
+        <gravity>1</gravity>
+      </link>
+      <static>1</static>
+    </model>
+</sdf>

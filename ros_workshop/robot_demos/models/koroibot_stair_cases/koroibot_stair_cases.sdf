@@ -1,0 +1,376 @@
+<?xml version="1.0"?>
+<sdf version='1.4'>
+  <model name='m_staircases_gerard_bauzil'>
+     <link name='Staircases_Gerard_Bauzil'>
+        <collision name='Staircases_Gerard_Bauzil_Collision'>
+          <geometry>
+            <mesh>
+              <uri>model://koroibot_stair_cases/meshes/stairmesh_v2.dae</uri>
+            </mesh>
+          </geometry>
+          <pose>0.000000 0.500000 0.05 0.000000 0.000000 0.000000</pose>
+          <surface>
+            <bounce/>
+            <friction>
+              <ode/>
+            </friction>
+            <contact>
+              <ode/>
+            </contact>
+          </surface>
+        </collision>
+        <visual name='Staircases_Gerard_Bauzil_Visual'>
+          <pose>0.000000 0.500000 0.05000 0.000000 0.000000 0.000000</pose>
+          <geometry>
+            <mesh>
+              <uri>model://koroibot_stair_cases/meshes/stairmesh_v2.dae</uri>
+            </mesh>
+          </geometry>
+          <material>
+            <script>
+              <uri>file://media/materials/scripts/gazebo.material</uri>
+              <name>Gazebo/WoodPallet</name>
+            </script>
+          </material>
+          <material>Gazebo/Blue</material>
+        </visual>
+        <velocity_decay>
+          <linear>0.000000</linear>
+          <angular>0.000000</angular>
+        </velocity_decay>
+        <pose>1.5 2.0 0.0 0.0 0.0 0.0</pose>
+        <self_collide>0</self_collide>
+        <kinematic>0</kinematic>
+        <gravity>1</gravity>
+      </link>
+     <link name='Staircases_Gerard_Bauzil_2'>
+        <collision name='Staircases_Gerard_Bauzil_Collision_2'>
+          <geometry>
+            <mesh>
+              <uri>model://koroibot_stair_cases/meshes/stairmesh_v2.dae</uri>
+            </mesh>
+          </geometry>
+          <pose>0.300000 0.500000 0.2 0.000000 0.000000 0.000000</pose>
+          <surface>
+            <bounce/>
+            <friction>
+              <ode/>
+            </friction>
+            <contact>
+              <ode/>
+            </contact>
+          </surface>
+        </collision>
+        <visual name='Staircases_Gerard_Bauzil_Visual_2'>
+          <pose>0.300000 0.500000 0.2000 0.000000 0.000000 0.000000</pose>
+          <geometry>
+            <mesh>
+              <uri>model://koroibot_stair_cases/meshes/stairmesh_v2.dae</uri>
+            </mesh>
+          </geometry>
+          <material>
+            <script>
+              <uri>file://media/materials/scripts/gazebo.material</uri>
+              <name>Gazebo/WoodPallet</name>
+            </script>
+          </material>
+        </visual>
+        <velocity_decay>
+          <linear>0.000000</linear>
+          <angular>0.000000</angular>
+        </velocity_decay>
+        <pose>1.5 2.0 0.0 0.0 0.0 0.0</pose>
+        <self_collide>0</self_collide>
+        <kinematic>0</kinematic>
+        <gravity>1</gravity>
+      </link>
+      <link name='Staircases_Gerard_Bauzil_3'>
+        <collision name='Staircases_Gerard_Bauzil_Collision_3'>
+          <geometry>
+            <mesh>
+              <uri>model://koroibot_stair_cases/meshes/stairmesh_v2.dae</uri>
+            </mesh>
+          </geometry>
+          <pose>0.600000 0.500000 0.35 0.000000 0.000000 0.000000</pose>
+          <surface>
+            <bounce/>
+            <friction>
+              <ode/>
+            </friction>
+            <contact>
+              <ode/>
+            </contact>
+          </surface>
+        </collision>
+        <visual name='Staircases_Gerard_Bauzil_Visual_3'>
+          <pose>0.600000 0.500000 0.350 0.000000 0.000000 0.000000</pose>
+          <geometry>
+            <mesh>
+              <uri>model://koroibot_stair_cases/meshes/stairmesh_v2.dae</uri>
+            </mesh>
+          </geometry>
+          <material>
+            <script>
+              <uri>file://media/materials/scripts/gazebo.material</uri>
+              <name>Gazebo/WoodPallet</name>
+            </script>
+          </material>
+        </visual>
+        <velocity_decay>
+          <linear>0.000000</linear>
+          <angular>0.000000</angular>
+        </velocity_decay>
+        <pose>1.5 2.0 0.0 0.0 0.0 0.0</pose>
+        <self_collide>0</self_collide>
+        <kinematic>0</kinematic>
+        <gravity>1</gravity>
+      </link>
+      <link name='Staircases_Gerard_Bauzil_4'>
+        <collision name='Staircases_Gerard_Bauzil_Collision_4'>
+          <geometry>
+            <mesh>
+              <uri>model://koroibot_stair_cases/meshes/stairmesh_v2.dae</uri>
+            </mesh>
+          </geometry>
+          <pose>0.900000 0.500000 0.5 0.000000 0.000000 0.000000</pose>
+          <surface>
+            <bounce/>
+            <friction>
+              <ode/>
+            </friction>
+            <contact>
+              <ode/>
+            </contact>
+          </surface>
+        </collision>
+        <visual name='Staircases_Gerard_Bauzil_Visual_4'>
+          <pose>0.900000 0.500000 0.50 0.000000 0.000000 0.000000</pose>
+          <geometry>
+            <mesh>
+              <uri>model://koroibot_stair_cases/meshes/stairplatform_v2.dae</uri>
+            </mesh>
+          </geometry>
+          <material>
+            <script>
+              <uri>file://media/materials/scripts/gazebo.material</uri>
+              <name>Gazebo/WoodPallet</name>
+            </script>
+          </material>
+        </visual>
+        <velocity_decay>
+          <linear>0.000000</linear>
+          <angular>0.000000</angular>
+        </velocity_decay>
+        <pose>1.5 2.0 0.0 0.0 0.0 0.0</pose>
+        <self_collide>0</self_collide>
+        <kinematic>0</kinematic>
+        <gravity>1</gravity>
+      </link>
+      <link name='Staircases_Gerard_Bauzil_5'>
+        <collision name='Staircases_Gerard_Bauzil_Collision_5'>
+          <geometry>
+            <mesh>
+              <uri>model://koroibot_stair_cases/meshes/stairmesh_v2.dae</uri>
+            </mesh>
+          </geometry>
+          <pose>1.400000 -0.300000 0.4 0.000000 0.000000 1.570000</pose>
+          <surface>
+            <bounce/>
+            <friction>
+              <ode/>
+            </friction>
+            <contact>
+              <ode/>
+            </contact>
+          </surface>
+        </collision>
+        <visual name='Staircases_Gerard_Bauzil_Visual_5'>
+          <pose>1.400000 -0.300000 0.40 0.000000 0.000000 1.570000</pose>
+          <geometry>
+            <mesh>
+              <uri>model://koroibot_stair_cases/meshes/stairmesh_v2.dae</uri>
+            </mesh>
+          </geometry>
+          <material>
+            <script>
+              <uri>file://media/materials/scripts/gazebo.material</uri>
+              <name>Gazebo/WoodPallet</name>
+            </script>
+          </material>
+        </visual>
+        <velocity_decay>
+          <linear>0.000000</linear>
+          <angular>0.000000</angular>
+        </velocity_decay>
+        <pose>1.5 2.0 0.0 0.0 0.0 0.0</pose>
+        <self_collide>0</self_collide>
+        <kinematic>0</kinematic>
+        <gravity>1</gravity>
+      </link>
+      <link name='Staircases_Gerard_Bauzil_6'>
+        <collision name='Staircases_Gerard_Bauzil_Collision_6'>
+          <geometry>
+            <mesh>
+              <uri>model://koroibot_stair_cases/meshes/stairmesh_v2.dae</uri>
+            </mesh>
+          </geometry>
+          <pose>1.400000 -0.600000 0.3 0.000000 0.000000 1.570000</pose>
+          <surface>
+            <bounce/>
+            <friction>
+              <ode/>
+            </friction>
+            <contact>
+              <ode/>
+            </contact>
+          </surface>
+        </collision>
+        <visual name='Staircases_Gerard_Bauzil_Visual_6'>
+          <pose>1.400000 -0.600000 0.30 0.000000 0.000000 1.57000</pose>
+          <geometry>
+            <mesh>
+              <uri>model://koroibot_stair_cases/meshes/stairmesh_v2.dae</uri>
+            </mesh>
+          </geometry>
+          <material>
+            <script>
+              <uri>file://media/materials/scripts/gazebo.material</uri>
+              <name>Gazebo/WoodPallet</name>
+            </script>
+          </material>
+        </visual>
+        <velocity_decay>
+          <linear>0.000000</linear>
+          <angular>0.000000</angular>
+        </velocity_decay>
+        <pose>1.5 2.0 0.0 0.0 0.0 0.0</pose>
+        <self_collide>0</self_collide>
+        <kinematic>0</kinematic>
+        <gravity>1</gravity>
+      </link>
+      <link name='Staircases_Gerard_Bauzil_7'>
+        <collision name='Staircases_Gerard_Bauzil_Collision_7'>
+          <geometry>
+            <mesh>
+              <uri>model://koroibot_stair_cases/meshes/stairmesh_v2.dae</uri>
+            </mesh>
+          </geometry>
+          <pose>1.400000 -0.900000 0.2 0.000000 0.000000 1.570000</pose>
+          <surface>
+            <bounce/>
+            <friction>
+              <ode/>
+            </friction>
+            <contact>
+              <ode/>
+            </contact>
+          </surface>
+        </collision>
+        <visual name='Staircases_Gerard_Bauzil_Visual_7'>
+          <pose>1.400000 -0.900000 0.2 0.000000 0.000000 1.57000</pose>
+          <geometry>
+            <mesh>
+              <uri>model://koroibot_stair_cases/meshes/stairmesh_v2.dae</uri>
+            </mesh>
+          </geometry>
+          <material>
+            <script>
+              <uri>file://media/materials/scripts/gazebo.material</uri>
+              <name>Gazebo/WoodPallet</name>
+            </script>
+          </material>
+        </visual>
+        <velocity_decay>
+          <linear>0.000000</linear>
+          <angular>0.000000</angular>
+        </velocity_decay>
+        <pose>1.5 2.0 0.0 0.0 0.0 0.0</pose>
+        <self_collide>0</self_collide>
+        <kinematic>0</kinematic>
+        <gravity>1</gravity>
+      </link>
+      <link name='Staircases_Gerard_Bauzil_8'>
+        <collision name='Staircases_Gerard_Bauzil_Collision_8'>
+          <geometry>
+            <mesh>
+              <uri>model://koroibot_stair_cases/meshes/stairmesh_v2.dae</uri>
+            </mesh>
+          </geometry>
+          <pose>1.400000 -1.200000 0.1 0.000000 0.000000 1.570000</pose>
+          <surface>
+            <bounce/>
+            <friction>
+              <ode/>
+            </friction>
+            <contact>
+              <ode/>
+            </contact>
+          </surface>
+        </collision>
+        <visual name='Staircases_Gerard_Bauzil_Visual_8'>
+          <pose>1.400000 -1.200000 0.1 0.000000 0.000000 1.57000</pose>
+          <geometry>
+            <mesh>
+              <uri>model://koroibot_stair_cases/meshes/stairmesh_v2.dae</uri>
+            </mesh>
+          </geometry>
+          <material>
+            <script>
+              <uri>file://media/materials/scripts/gazebo.material</uri>
+              <name>Gazebo/WoodPallet</name>
+            </script>
+          </material>
+        </visual>
+        <velocity_decay>
+          <linear>0.000000</linear>
+          <angular>0.000000</angular>
+        </velocity_decay>
+        <pose>1.5 2.0 0.0 0.0 0.0 0.0</pose>
+        <self_collide>0</self_collide>
+        <kinematic>0</kinematic>
+        <gravity>1</gravity>
+      </link>
+      <link name='Staircases_Gerard_Bauzil_9'>
+        <collision name='Staircases_Gerard_Bauzil_Collision_9'>
+          <geometry>
+            <mesh>
+              <uri>model://koroibot_stair_cases/meshes/stairmesh_v2.dae</uri>
+            </mesh>
+          </geometry>
+          <pose>1.400000 -1.500000 0.0 0.000000 0.000000 1.570000</pose>
+          <surface>
+            <bounce/>
+            <friction>
+              <ode/>
+            </friction>
+            <contact>
+              <ode/>
+            </contact>
+          </surface>
+        </collision>
+        <visual name='Staircases_Gerard_Bauzil_Visual_9'>
+          <pose>1.400000 -1.500000 0.0 0.000000 0.000000 1.57000</pose>
+          <geometry>
+            <mesh>
+              <uri>model://koroibot_stair_cases/meshes/stairmesh_v2.dae</uri>
+            </mesh>
+          </geometry>
+          <material>
+            <script>
+              <uri>file://media/materials/scripts/gazebo.material</uri>
+              <name>Gazebo/WoodPallet</name>
+            </script>
+          </material>
+        </visual>
+        <velocity_decay>
+          <linear>0.000000</linear>
+          <angular>0.000000</angular>
+        </velocity_decay>
+        <pose>1.5 2.0 0.0 0.0 0.0 0.0</pose>
+        <self_collide>0</self_collide>
+        <kinematic>0</kinematic>
+        <gravity>1</gravity>
+      </link>
+      <static>1</static>
+    </model>
+</sdf>
